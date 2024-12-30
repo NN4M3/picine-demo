@@ -1,0 +1,16 @@
+#include <unistd.h>
+
+char *ft_strncopy(char *dest, char *src, unsigned int n){
+    int i = 0;
+
+    while(src[i] != '\0', i < n){
+        dest[i] = src[i];
+        i++;
+    }
+
+    while (i < n){
+        dest[i] = '\0';
+    }
+    
+    return dest;
+}
