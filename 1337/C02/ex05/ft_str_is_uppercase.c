@@ -1,10 +1,14 @@
 #include <unistd.h>
 
 int ft_str_is_uppercase(char *str){
-	for(int i = 0; str[i] != '\0'; i++){
-		if(!(str[i] >= 'A' && str[i] <= 'Z')){
-			return  0;
+	int i;
+	i = 0;
+
+	while(str[i] != '\0'){
+		if(!str[i] >= 'A' && str[i] <= 'Z'){
+			return 0;
 		}
+		i++;
 	}
 
 	return 1;
