@@ -1,7 +1,10 @@
 #include <unistd.h>
 
 unsigned int ft_strlcpy(char *dest, char *src, unsigned int size){
-	for(int i = 0; i < size; i++){
+    int i;
+    i = 0;
+	while(i < size){
         dest[i] = src[i];
+        i++;
     }
 }
