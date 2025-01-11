@@ -6,21 +6,27 @@ char *ft_capitalize(char *str){
 	i = 0;
 	j = 0;
 
-	while(str[i] != '\0'){
-		if(str[i] >= 'A' && str[i] <= 'Z'){
+	while(str[i] != '\0')
+	{
+		if(str[i] >= 'A' && str[i] <= 'Z')
+		{
 			str[i] += 32;
 		}
 		i++;
 	}
 	
-	if(str[j] >= 'a' && str[j] <= 'z'){
+	if(str[j] >= 'a' && str[j] <= 'z')
+	{
 		str[j] -= 32;
 		j++;
 	}
 	
-	while(str[j] != '\0'){
-		if(!(str[j-1] >= 'a' && str[j-1] <= 'z') && !(str[j-1] >= 'A' && str[j-1] <= 'Z')){
-			if(str[j] >= 'a' && str[j] <= 'z'){
+	while(str[j] != '\0')
+	{
+		if(!(str[j-1] >= 'a' && str[j-1] <= 'z') && !(str[j-1] >= 'A' && str[j-1] <= 'Z'))
+		{
+			if(str[j] >= 'a' && str[j] <= 'z')
+			{
                 str[j] -= 32;
             }
 		}
